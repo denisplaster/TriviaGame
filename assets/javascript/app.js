@@ -1,15 +1,25 @@
 $(document).ready(function() {
 
 
-	//autoplay background music in chrome
-	var isChrome = /Chrome/.test(navigator.playerAgent) && /Google Inc/.test(navigator.vendor);
-isChrome.volume = 0.1;
-    if(!isChrome){
-      $('#iframeAudio').remove()
-    }
-  else{
-     $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
-  }
+	var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+	isChrome.volume = 0.1;
+			if(!isChrome){
+				$('#iframeAudio').remove()
+			}
+		else{
+			 $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
+		}
+			
+			// Audio Setup
+			// ===========
+			
+			// Create an audio element with JavaScript
+			var audioElement = document.createElement("audio");
+			// audioElement.volume = 0.8;
+	
+			
+			// Set it's source to the location of audio file.
+			audioElement.setAttribute("src", "assets/audio/Main Theme.mp3");
     
 
   
