@@ -1,0 +1,55 @@
+body { 
+	background-image: url("../images/vreisa.jpg");
+	/* -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; */
+	background-size: cover;
+	font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+
+.logo {
+    background-size: 20%;
+}
+.center {
+	margin-left: 41%
+}
+
+.cashMoney {
+	max-width: 500px;
+	max-height: 300px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	color: white;
+	padding: 25px;
+	text-shadow: 2px 2px gray;
+}
+
+.answer,
+#timer {
+	font-weight: 1000;
+}
+
+#start {
+	color: black;
+}
+
+.choices {
+	text-align: center;
+	border: groove 2px black;
+	border-radius: 5%;
+	margin: 0 35%;
+}
+
+.choices:hover {
+	background-color: blue;
+	color: white;
+}
+
+#gameScreen {
+	box-shadow: 7px 5px 47px 0px rgba(0, 0, 0, 0.76);
+}
